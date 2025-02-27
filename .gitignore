@@ -1,0 +1,27 @@
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor-Dateien
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*~
+
+# Dependency-Verzeichnisse
+node_modules/
+vendor/
+
+# Build-Dateien
+dist/
+build/
+*.log
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
