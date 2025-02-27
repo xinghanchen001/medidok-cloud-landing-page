@@ -2,7 +2,8 @@ stackbitVersion: ~0.6.0
 ssgName: custom
 nodeVersion: '18'
 
-devServerCommand: npx serve
+devCommand: npm run dev
+buildCommand: npm run build || echo 'No build command'
 
 assets:
   referenceType: static
@@ -32,6 +33,37 @@ models:
         name: slug
         label: Slug
         required: true
+      - type: object
+        name: hero
+        label: Hero Section
+        fields:
+          - type: string
+            name: heading
+            label: Heading
+          - type: string
+            name: subheading
+            label: Subheading
+          - type: string
+            name: buttonText
+            label: Button Text
+          - type: string
+            name: buttonLink
+            label: Button Link
+      - type: list
+        name: features
+        label: Features
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: description
+              label: Description
+            - type: string
+              name: icon
+              label: Icon Name
       - type: markdown
         name: content
         label: Content
