@@ -19,7 +19,7 @@
   command = "npm run build || echo 'No build command'"
 
 [context.preview]
-  command = "npm run dev"
+  command = "npm run build || echo 'No build command'"
 
 [functions]
   directory = "netlify/functions"

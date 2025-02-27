@@ -2,8 +2,10 @@ stackbitVersion: ~0.6.0
 ssgName: custom
 nodeVersion: '18'
 
+# Für die lokale Entwicklung
 devCommand: npm run dev
-buildCommand: npm run build || echo 'No build command'
+# Für den Build auf Netlify
+buildCommand: npm run build || echo 'No build needed'
 
 assets:
   referenceType: static

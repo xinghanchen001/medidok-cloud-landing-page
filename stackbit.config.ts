@@ -65,7 +65,7 @@ export default defineStackbitConfig({
             .filter(Boolean) as SiteMapEntry[];
     },
     // Dev-Server-Konfiguration
-    buildCommand: "npm run build || echo 'No build command'",
+    buildCommand: "npm run build || echo 'No build needed'",
     devCommand: "npm run dev",
     assets: {
         referenceType: "static",
