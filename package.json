@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@stackbit/cms-git": "^0.4.0",
     "@stackbit/types": "^0.10.0",
     "serve": "^14.2.1"
   }

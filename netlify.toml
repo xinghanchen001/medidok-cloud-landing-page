@@ -22,4 +22,10 @@
   command = "npm run dev"
 
 [functions]
-  directory = "netlify/functions" 
+  directory = "netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "ALLOW-FROM https://app.netlify.com"
+    Content-Security-Policy = "frame-ancestors 'self' https://app.netlify.com https://*.netlify.app;" 

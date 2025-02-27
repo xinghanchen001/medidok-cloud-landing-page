@@ -24,6 +24,7 @@ models:
     type: page
     label: Page
     urlPath: /{slug}
+    filePath: content/{slug}.md
     fields:
       - type: string
         name: title
