@@ -1,0 +1,18 @@
+{
+  "name": "medidok-cloud-landing-page",
+  "version": "1.0.0",
+  "description": "Diese Test-Landing-Page präsentiert das fiktive Produkt \"mediDOK Cloud\" und dient als Vorlage für eine professionelle medizinische Cloud-Lösung.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve",
+    "dev": "serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stackbit/types": "^0.10.0",
+    "serve": "^14.2.1"
+  }
+}
