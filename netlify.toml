@@ -14,7 +14,6 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  GO_VERSION = "0" # Deaktiviert Go-Installation
 
 [context.production]
   command = "npm run build || echo 'No build command'"
