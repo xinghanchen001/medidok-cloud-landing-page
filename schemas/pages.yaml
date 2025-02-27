@@ -1,0 +1,17 @@
+title: Pages
+models:
+  page:
+    type: page
+    label: Page
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: slug
+        label: Slug
+        required: true
+      - type: markdown
+        name: content
+        label: Content 

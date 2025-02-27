@@ -1,0 +1,25 @@
+[build]
+  command = "npm run build || echo 'No build command'"
+  publish = "."
+
+[dev]
+  command = "npm run dev"
+  port = 8888
+  framework = "#static"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[context.production]
+  command = "npm run build || echo 'No build command'"
+
+[context.preview]
+  command = "npm run dev"
+
+[functions]
+  directory = "netlify/functions" 

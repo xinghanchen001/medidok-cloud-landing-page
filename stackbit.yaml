@@ -1,0 +1,43 @@
+stackbitVersion: ~0.6.0
+ssgName: custom
+nodeVersion: '18'
+
+devServerCommand: npx serve
+
+assets:
+  referenceType: static
+  publicPath: /
+  staticDir: ./
+
+contentSources:
+  - name: pages
+    label: Pages
+    driver:
+      type: files
+      location: content
+    schema:
+      path: schemas/pages.yaml
+
+models:
+  page:
+    type: page
+    label: Page
+    urlPath: /{slug}
+    fields:
+      - type: string
+        name: title
+        label: Title
+        required: true
+      - type: string
+        name: slug
+        label: Slug
+        required: true
+      - type: markdown
+        name: content
+        label: Content
+
+pageLayouts:
+  - content/index.md
+  - content/about.md
+  - content/features.md
+  - content/contact.md 
